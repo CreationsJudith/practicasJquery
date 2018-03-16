@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<script src="jquery-3.3.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#h1").mouseenter(function(){
+				$(this).hide();
+				alert("Se ha ocultado la etiqueta h1");
+			});
+		});
+	</script>
+	<title></title>
+</head>
+<body>
+	<h1 id="h1">Al entrar en mouse dentro de la página saldrá el alert y al confirmar desaparecerá este texto</h1>
+</body>
+</html>

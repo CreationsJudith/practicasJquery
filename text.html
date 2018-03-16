@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script src="jquery-3.3.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#go").click(function(){
+				alert("text: "+ $("#texto").text());
+			});
+		});
+	</script>
+</head>
+<body>
+	<p id="texto">Este es el texto que se obtendrán con el método text()</p>
+	<button id="go">Empezar</button>
+</body>
+</html>

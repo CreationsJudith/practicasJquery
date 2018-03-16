@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<script src="jquery-3.3.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("input").focus(function(){
+				$(this).css("background-color", "#FF00BF");
+			});
+			$("input").blur(function(){
+				$(this).css("background-color", "#AEB404");
+			});
+		});
+	</script>
+	<title></title>
+</head>
+<body>
+	<h1>Usuario: <input type="text" name="usuario" value="usuario" placeholder="usuario"></h1>
+	<h1>Password: <input type="text" name="password" value="password" placeholder="usuario"></h1>
+</body>
+</html>

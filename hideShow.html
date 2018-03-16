@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script src="jquery-3.3.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#hide").click(function(){
+				$("h1").hide("slow", function(){
+					alert("Se ha ocultado el texto");	
+				});
+				//slow, fast, milisegundos
+			});
+			$("#show").click(function(){
+				$("h1").show(5000);
+			});
+		});
+	</script>
+</head>
+<body>
+	<h1>Dependiendo del boton que pulses se ocultará o visualizará este texto de prueba!!!!!!</h1>
+	<button id="hide">HIDE(Ocultar)</button>
+	<button id="show">SHOW(mostrar)</button>
+</body>
+</html>

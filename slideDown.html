@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+		#con1{
+			width: 100px;
+			height:100px;
+			padding: 50px;
+			display: none;
+			background: #FF0040;
+		}
+	</style>
+	<script src="jquery-3.3.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#evento").click(function(){
+				$("#con1").slideDown(5000, function(){
+					alert("Se produjo el evento slideDown()");
+				});
+			});
+		});
+	</script>
+</head>
+<body>
+	<button id="evento">Pulsa aquí</button>
+	<div id="con1">Este es el método slideDown()</div>
+</body>
+</html>

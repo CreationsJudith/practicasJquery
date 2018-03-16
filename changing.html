@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+		.con1{
+			position: absolute;
+			background: #abc;
+			left: 0px;
+			top: 30px;
+			width: 60px;
+			height: 60px;
+			margin: 5px;
+		}
+	</style>
+	<script src="jquery-3.3.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#go").click(function(){
+				$(".con1").slideUp(5000)
+						  .slideDown(5000)
+						  .animate({left:"+=50px"}, 2000, function(){
+							$(".con1").animate({left:"-=50px"}, 2000);
+							alert("Ha finalizado la animación multiple");
+						})
+			});
+		});
+	</script>
+</head>
+<body>
+	<button id="go">Empezar</button>
+	<div class="con1"></div>
+</body>
+</html>

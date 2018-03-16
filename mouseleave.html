@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<script src="jquery-3.3.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".h1").mouseleave(function(){
+				$(this).hide();
+				alert("Se ocultará esta etiqueta porque has salido de la etiqueta.");
+			});
+		});
+	</script>
+	<title></title>
+</head>
+<body>
+	<h1 class="h1">Al colocarse el mouse en el texto y luego cuando salgas saldrá el alert y despuás de confirmar desaparecera esa etiqueta</h1>
+	<p class="h1">Este párrafo también si te posicionas en el</p>
+	<p class="h1">Hasta esta también si quieres seguir probando</p>
+</body>
+</html>

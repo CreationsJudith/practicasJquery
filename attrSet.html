@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script src="jquery-3.3.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#go").click(function(){
+				$("#texto").attr("id", "cambio");
+				alert("atributo: "+ $("p").attr("id"));
+			});
+		});
+	</script>
+</head>
+<body>
+	<p id="texto">A este parrafo se le cambiara el nombre del id con el metodo attr()</p>
+	<button id="go">Empezar</button>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+		#con1{
+			width: 100px;
+			height:100px;
+			background: #FF0040;
+		}
+		#con2{
+			width: 100px;
+			height:100px;
+			background: #0040FF;
+		}
+		#con3{
+			width: 100px;
+			height:100px;
+			background: #01DF01;
+		}
+	</style>
+	<script src="jquery-3.3.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("#con1").fadeOut();
+				$("#con2").fadeOut("slow");
+				$("#con3").fadeOut(5000);
+			});
+		});
+	</script>
+</head>
+<body>
+	<h1>Se visualizará los contenedores de prueba!!!</h1>
+	<button>Prueba de FadeOut</button>
+	<div id="con1"></div>
+	<div id="con2"></div>
+	<div id="con3"></div>
+</body>
+</html>

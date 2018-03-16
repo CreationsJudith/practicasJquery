@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<script src="jquery-3.3.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("p").on({
+				mouseenter: function(){
+					$(this).css("background-color", "#FF00BF");//rosa
+				},
+				mouseleave: function(){
+					$(this).css("background-color", "#AEB404");//amarillo
+				},
+				click: function(){
+					$(this).css("background-color", "#08088A");//azul
+				}
+			});
+		});
+	</script>
+	<title></title>
+</head>
+<body>
+	<p>dependiendo del movimiento del mouse se producirá un color</p>
+</body>
+</html>

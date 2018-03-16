@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+		#con1{
+			width: 400px;
+			height: 100px;
+			padding: 50px;
+			background: #FF0040;
+			position: absolute;
+		}
+	</style>
+	<script src="jquery-3.3.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#evento").click(function(){
+				$("#con1").animate({
+					left: '250px',
+					opacity: '0.5',
+					height: '150px',
+					width: '150px'
+				});
+			});
+		});
+	</script>
+</head>
+<body>
+	<button id="evento">Pulsa aquí</button>
+	<div id="con1">Este es el método animate()</div>
+</body>
+</html>
